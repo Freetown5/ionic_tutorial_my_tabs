@@ -6,29 +6,17 @@ app.config(function($stateProvider, $urlRouterProvider){
 
   $stateProvider.state('home',{
     url: '/home',
-    views:{
-      'tab-home': {
-        templateUrl: 'templates/home.html'
-      }
-    }
+    templateUrl: 'templates/home.html'
   });
 
   $stateProvider.state('settings',{
     url: '/settings',
-    views:{
-      'tab-settings':{
-        templateUrl: 'templates/settings.html'
-      }
-    }
+    templateUrl: 'templates/settings.html'
   });
 
   $stateProvider.state('details',{
     url: '/details',
-    views:{
-      'tab-home':{
-        templateUrl: 'templates/details.html'
-      }
-    }
+    templateUrl: 'templates/details.html'
   });
 
   $urlRouterProvider.otherwise('/home');
